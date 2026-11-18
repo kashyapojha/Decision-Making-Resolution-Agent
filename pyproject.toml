@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decision-resolution-agent"
+version = "0.1.0"
+description = "A tool-using Python agent for order exchanges and refunds"
+requires-python = ">=3.10"
+
+[project.scripts]
+resolution-agent = "resolution_agent.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
